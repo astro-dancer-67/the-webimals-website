@@ -1,1 +1,4 @@
-# the-webimals-website
+# The Webimals Website
+
+## Were deployed
+firebase
