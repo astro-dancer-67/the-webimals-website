@@ -17,7 +17,9 @@ const firestore = firebase.firestore();
 firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
 .then((snapshot) => {
-  console.log(snapshot.docs);
+  snapshot.docs.forEach(() => {
+    console.log(snapshot.docs.data());
+  })
 }).catch((err) => {
   console.log(err.message)
 })
