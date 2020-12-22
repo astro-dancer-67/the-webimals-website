@@ -4,6 +4,8 @@ body {
 
 .log-in-div {
   display: flex;
+  flex-diriction: column;
+  justify-content: space-evenly;
 }
 
 .log-in-div .log-in {
