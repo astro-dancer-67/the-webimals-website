@@ -13,6 +13,12 @@ body {
   heigth: 500px;
   background-color: yellow;
 }
+
+.log-in-div .subscribe {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+}
 * {
     margin: 0px;
 }
