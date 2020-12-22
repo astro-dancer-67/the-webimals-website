@@ -1,9 +1,6 @@
 body {
   background-color: rgba(208, 100, 91, 0.5);
 }
-.log-in{
-  background-color: yellow,
-}
-.log-in button {
-    color: green
+form {
+  background-color: yellow 
 }
