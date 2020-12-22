@@ -4,8 +4,9 @@ body {
 
 form {
   background-color: yellow;
-  height: 400px;
-  width: 300px;
+  display: flex;
+  height: 300px;
+  width: 600px;
 }
 
 * {
