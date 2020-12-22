@@ -1,3 +1,3 @@
 // Get Localstorage As Storage
-var storage = window.localstorage;
+var storage = window.localStorage;
 console.log(storage);
