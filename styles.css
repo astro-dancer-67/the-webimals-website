@@ -2,13 +2,14 @@ body {
   background-color: rgba(208, 100, 91, 0.5);
 }
 
-form {
-  background-color: yellow;
+.log-in-div {
   display: flex;
-  height: 300px;
-  width: 600px;
 }
 
+.log-in-div .log-in {
+  width: 400px;
+  heigth: 300px;
+}
 * {
     margin: 0px;
 }
