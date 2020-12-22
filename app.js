@@ -13,6 +13,16 @@ firebase.initializeApp({
 // Add Firstore
 const firestore = firebase.firestore();
 
+// Make a render function
+const render = (doc) => {
+  const title = doc.title.data();
+  const paragraghs = doc.paragraghs.data();
+  const imageURL = doc.paragraghs.data();
+  
+  const titleh1 = document.createElement('h1');
+  const paragraghsPs = document.createElement('p');
+  const image = document.createElement('image');
+}
 // Connect To database
 firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
