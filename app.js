@@ -1,5 +1,5 @@
 // Initalize our app
-firebase.firebase.initializeApp({
+firebase.initializeApp({
   apiKey: "AIzaSyAv3TPG0rtCa1p7sd3Tp607kWOYVvn_NAA",
   authDomain: "webimals-us.firebaseapp.com",
   databaseURL: "https://webimals-us-default-rtdb.firebaseio.com",
