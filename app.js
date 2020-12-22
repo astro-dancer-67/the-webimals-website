@@ -12,3 +12,11 @@ firebase.initializeApp({
 
 // Add Firstore
 const firestore = firebase.firestore();
+
+// Connect To database
+firestore.collection('blog posts').get()
+.then((snapshot) => {
+  console.log(snapshot.docs);
+}).catch((err) => {
+  console.log(err.message)
+})
