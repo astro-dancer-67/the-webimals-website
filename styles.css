@@ -9,6 +9,7 @@ body {
 .log-in-div .log-in {
   width: 400px;
   heigth: 300px;
+  background-color: yellow;
 }
 * {
     margin: 0px;
