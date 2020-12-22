@@ -14,7 +14,7 @@ firebase.initializeApp({
 const firestore = firebase.firestore();
 
 // Connect To database
-firestore.settinga({timestampsInSnapshots: true})
+firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
 .then((snapshot) => {
   console.log(snapshot.docs);
