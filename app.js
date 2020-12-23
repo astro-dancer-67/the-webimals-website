@@ -20,8 +20,11 @@ const render = (doc) => {
   const imageURL = doc.paragraghs.data();
   
   const titleh1 = document.createElement('h1');
-  const paragraghsPs = document.createElement('p');
+  const paragraghsP = document.createElement('p');
   const image = document.createElement('image');
+  
+  titleh1.innerHTML = title;
+  paragraghsP.innerHTMl = paragraghs;  
 }
 // Connect To database
 firestore.settings({timestampsInSnapshots: true})
