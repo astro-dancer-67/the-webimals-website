@@ -21,9 +21,9 @@ const render = (doc) => {
   // Get Blogs
   const blogs = document.querySelector('#blog-posts');
 
-  const title = doc.title.data();
-  const paragraghs = doc.paragraghs.data();
-  const imageURL = doc.paragraghs.data();
+  const title = doc.data().title;
+  const paragraghs = doc.data().paragraghs;
+  const imageURL = doc.data().photoURL;
   
   const titleh1 = document.createElement('h1');
   const paragraghsP = document.createElement('p');
