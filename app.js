@@ -28,12 +28,16 @@ const render = (doc) => {
   const titleh1 = document.createElement('h1');
   const paragraghsP = document.createElement('p');
   const image = document.createElement('image');
+  const animaldiv = document.createElement('div');
   
   titleh1.innerHTML = title;
   paragraghsP.innerHTMl = paragraghs;  
   
-  blogs.appendChild(titleh1);
-  blogs.appendChild(paragraghsP);
+  animaldiv.appendChild(titleh1);
+  animaldiv.appendChild(paragraghsP);
+  animaldiv.appendChild(image);
+  
+  blogs.appendChild(animaldiv);
 }
 // Connect To database
 firestore.settings({timestampsInSnapshots: true})
