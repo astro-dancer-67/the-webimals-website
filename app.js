@@ -13,8 +13,14 @@ firebase.initializeApp({
 // Add Firstore
 const firestore = firebase.firestore();
 
+// Get Blogs
+const blogs = document.querySelector('#blog-posts');
+
 // Make a render function
 const render = (doc) => {
+  // Get Blogs
+  const blogs = document.querySelector('#blog-posts');
+
   const title = doc.title.data();
   const paragraghs = doc.paragraghs.data();
   const imageURL = doc.paragraghs.data();
@@ -25,13 +31,16 @@ const render = (doc) => {
   
   titleh1.innerHTML = title;
   paragraghsP.innerHTMl = paragraghs;  
+  
+  blogs.appendChild(titleh1);
+  blogs.appendChild(paragraghsP);
 }
 // Connect To database
 firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
 .then((snapshot) => {
   snapshot.docs.forEach((doc) => {
-    console.log(doc.data());
+    render(doc);
   })
 }).catch((err) => {
   console.log(err.message)
