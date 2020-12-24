@@ -49,3 +49,6 @@ firestore.collection('blog posts').get()
 }).catch((err) => {
   console.log(err.message)
 })
+
+// Keep account data in localstorage
+localStorage.setItem('email', 'null')
