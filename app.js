@@ -13,9 +13,10 @@ firebase.initializeApp({
 // Add Firstore
 const firestore = firebase.firestore();
 
-// Get Elements from the DOM
-const txtemail = document.querySelector('#email');
-const txtpassword = document.querySelectotr('#password');
+// Get Firebase Authenication
+const auth = firebase.auth();
+const provider = new firebase.auth.GoogleAuthProvider();
+auth.signInWithPopup(provider)
 
 // Get Blogs
 const blogs = document.querySelector('#blog-posts');
