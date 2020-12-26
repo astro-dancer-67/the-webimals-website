@@ -2,5 +2,5 @@
   display: flex;
   background-color: #4da6ff;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
