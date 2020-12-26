@@ -16,29 +16,6 @@ const firestore = firebase.firestore();
 // Get Blogs
 const blogs = document.querySelector('#blog-posts');
 
-// Make a render function
-const render = (doc) => {
-  // Get Blogs
-  const blogs = document.querySelector('#blog-posts');
-
-  const title = doc.data().title;
-  const paragraghs = doc.data().paragraghs;
-  const imageURL = doc.data().photoURL;
-  
-  const titleh1 = document.createElement('h1');
-  const paragraghsP = document.createElement('p');
-  const image = document.createElement('image');
-  const animaldiv = document.createElement('div');
-  
-  titleh1.innerHTML = title;
-  paragraghsP.innerHTMl = paragraghs;  
-  
-  animaldiv.appendChild(titleh1);
-  animaldiv.appendChild(paragraghsP);
-  animaldiv.appendChild(image);
-  
-  blogs.appendChild(animaldiv);
-}
 // Connect To database
 firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
