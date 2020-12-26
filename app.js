@@ -21,7 +21,7 @@ firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
 .then((snapshot) => {
   snapshot.docs.forEach((doc) => {
-    render(doc);
+    console.log(snapshot.docs);
   })
 }).catch((err) => {
   console.log(err.message)
