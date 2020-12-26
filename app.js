@@ -13,6 +13,10 @@ firebase.initializeApp({
 // Add Firstore
 const firestore = firebase.firestore();
 
+// Get Elements from the DOM
+const txtemail = document.querySelector('#email');
+const txtpassword = document.querySelectotr('#password');
+
 // Get Blogs
 const blogs = document.querySelector('#blog-posts');
 
@@ -21,7 +25,7 @@ firestore.settings({timestampsInSnapshots: true})
 firestore.collection('blog posts').get()
 .then((snapshot) => {
   snapshot.docs.forEach((doc) => {
-    console.log(snapshot.docs);
+    console.log(snapshot.docs.data());
   })
 }).catch((err) => {
   console.log(err.message)
